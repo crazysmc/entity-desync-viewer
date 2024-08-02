@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "entity-desync-viewer",
+  "version": "${version}",
+  "name": "Entity Desync Viewer",
+  "description": "Render the server-side hitboxes of entities in singleplayer",
+  "authors": [
+    "crazysmc"
+  ],
+  "contact": {
+    "homepage": "https://github.com/crazysmc/entity-desync-viewer",
+    "sources": "https://github.com/crazysmc/entity-desync-viewer",
+    "issues": "https://github.com/crazysmc/entity-desync-viewer/issues"
+  },
+  "icon": "assets/entity-desync-viewer/icon.png",
+  "license": "MIT",
+  "environment": "client",
+  "mixins": [
+    "edv.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": ">=${minecraft_version}"
+  }
+}

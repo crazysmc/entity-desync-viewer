@@ -1,0 +1,30 @@
+plugins {
+  alias libs.plugins.loom
+}
+
+version = mod_version
+group = maven_group
+base.archivesName = mod_id
+
+tasks.withType Jar configureEach {
+  from rootProject.file('LICENSE')
+}
+
+java {
+  toolchain.languageVersion = JavaLanguageVersion.of java_version
+}
+
+dependencies {
+  minecraft group: 'com.mojang', name: 'minecraft', version: minecraft_version
+  mappings loom.layered {
+    officialMojangMappings { nameSyntheticMembers = true }
+  }
+  modImplementation libs.loader
+}
+
+processResources {
+  inputs.file 'gradle.properties'
+  filesMatching 'fabric.mod.json', {
+    expand project.properties
+  }
+}
