@@ -3,7 +3,9 @@
   "minVersion": "0.8",
   "compatibilityLevel": "JAVA_21",
   "package": "io.github.crazysmc.edv.mixin",
-  "client": [],
+  "client": [
+    "EntityRenderDispatcherMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   },
