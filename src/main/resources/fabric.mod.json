@@ -3,7 +3,7 @@
   "id": "entity-desync-viewer",
   "version": "${version}",
   "name": "Entity Desync Viewer",
-  "description": "Render the server-side hitboxes of entities in singleplayer",
+  "description": "Render the server-side hitboxes of entities",
   "authors": [
     "crazysmc"
   ],
