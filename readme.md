@@ -8,3 +8,5 @@ in green in addition to the normal client-side ones in white.
 
 Usage examples include observing desync after sprint-punching entities or 
 standing on a client-side piston head.
+
+Available on [Modrinth](https://modrinth.com/mod/entity-desync-viewer).
