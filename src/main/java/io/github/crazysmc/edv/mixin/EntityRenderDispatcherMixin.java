@@ -20,7 +20,7 @@ public abstract class EntityRenderDispatcherMixin
   {
   }
 
-  @WrapOperation(method = "render",
+  @WrapOperation(method = "render(Lnet/minecraft/world/entity/Entity;DDDFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/client/renderer/entity/EntityRenderer;)V",
                  at = @At(value = "INVOKE",
                           target = "Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;renderHitbox(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/world/entity/Entity;FFFF)V"))
   private void wrapRenderHitbox(PoseStack poseStack, VertexConsumer vertexConsumer, Entity entity, float tickDelta,
